@@ -11,8 +11,10 @@ const App = () => {
   return (
     <Box width="400px">
       <Navbar />
-      <Route path="/" element={<Home />} />
-      <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      </Routes>
       <Footer />
     </Box>
   );
